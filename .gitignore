@@ -1,0 +1,12 @@
+# On ignore les fichiers de données volumineux
+data/
+
+# On ignore les modèles entraînés (fichiers binaires)
+*.pkl
+
+# On ignore les fichiers de cache Python
+**/__pycache__/
+
+# On ignore les environnements virtuels si tu en as un
+.venv/
+venv/
