@@ -1,0 +1,8 @@
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+onnx
+skl2onnx
+xgboost

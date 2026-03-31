@@ -45,12 +45,3 @@ probability = model.predict_proba(transaction)[0][1]
 
 print("🚨 FRAUDE" if prediction == 1 else "✅ TRANSACTION SAINE")
 print("Probabilité de fraude :", round(probability, 3))
-
-import os
-
-# Trouver le chemin vers le modèle de manière sûre
-base_path = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(base_path, "models", "random_forest_final.pkl")
-
-with open(model_path, "rb") as f:
-    model = pickle.load(f)
